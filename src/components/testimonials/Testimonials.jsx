@@ -1,67 +1,64 @@
-import React from 'react'
-import "./testimonials.css"
-import AVTR1 from '../../assets/avatar1.jpg';
-import AVTR2 from '../../assets/avatar2.jpg';
-import AVTR3 from '../../assets/avatar3.jpg';
-import AVTR4 from '../../assets/avatar4.jpg';
-
+import React from "react";
+import "./testimonials.css";
+import Project1 from "../../assets/ProjectMain1.gif";
+// import Project2 from "../../assets/ProjectMain2.gif";
+import Project3 from "../../assets/ProjectMain3.gif";
+import Project4 from "../../assets/ProjectMain4.gif";
 
 // import Swiper core and required modules
-import { Pagination} from 'swiper';
+import { Pagination } from "swiper";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const data = [
-  {
-    avatar: AVTR1,
-    name: '동욱',
-    review: "ddddk어쩌고 저쩌고"
-  },
-  {
-    avatar: AVTR2,
-    name: '동욱'
-  },
-  {
-    avatar: AVTR3,
-    name: '동욱'
-  },
-  {
-    avatar: AVTR4,
-    name: '동욱'
-  },
-]
+    {
+        project: Project1,
+        name: "동욱",
+        review: "ddddk어쩌고 저쩌고",
+    },
+    {
+        project: Project3,
+        name: "동욱",
+    },
+    {
+        project: Project3,
+        name: "동욱",
+    },
+    {
+        project: Project4,
+        name: "동욱",
+    },
+];
 
 const Testimonials = () => {
-  return (
-    <section id='testimonials'>
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+    return (
+        <section id="testimonials">
+            <h5>Review from clients</h5>
+            <h2>Gallery</h2>
 
-      <Swiper className="container testimonials__container"
-        modules={[Pagination]} spaceBetween={50}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-      >
-        {data.map(({avatar,name,review},index)=>{
-          return (
-            <SwiperSlide key={index} className="testimonial">
-            <div className="client__avatar">
-              <img src={avatar}  alt=""/>
-            </div>
-              <h5 className='client__name'>{name}</h5>
-              <small className='client__review'>
-                 {review}
-              </small>
-          </SwiperSlide>
-          )
-        })}
-      </Swiper>
-    </section >
-  )
-}
+            <Swiper
+                className="container testimonials__container"
+                modules={[Pagination]}
+                spaceBetween={50}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+            >
+                {data.map(({ project }, index) => {
+                    return (
+                        <SwiperSlide key={index} className="testimonial">
+                            <div className="testimonial__gallery">
+                                <img src={project} alt="" />
+                            </div>
+                        </SwiperSlide>
+                    );
+                })}
+            </Swiper>
+        </section>
+    );
+};
 
-export default Testimonials
+export default Testimonials;

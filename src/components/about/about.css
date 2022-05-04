@@ -29,7 +29,7 @@
     transform: rotate(0);
 }
 
-.about__cards{
+.about__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -45,7 +45,7 @@
 }
 .about__card:hover {
     background: transparent;
-    border-color: var(--color-primary-variant); 
+    border-color: var(--color-primary-variant);
     cursor: default;
 }
 .about__icon {
@@ -68,36 +68,34 @@
     color: var(--color-light);
 }
 
-
 /* =============== MEDIA QUERIES ===================== */
-@media screen and(max-width: 1024px) {
-   .about__container {
-       grid-template-columns: 1fr;
-       gap: 0;
-   }
-   .about__me {
-       width: 50%;
-       margin: 2rem auto 4rem;
-   }
+@media screen and (max-width: 1024px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about__me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
 
-   .about__content p {
-       margin-top: 1rem 0 1.5rem;
-   }
+    .about__content p {
+        margin-top: 1rem 0 1.5rem;
+    }
 }
-@media screen and(max-width: 600px) {
-  .about__me {
-      width: 65%;
-      margin: 0 auto 3rem;
-  }
-  .about__cards{
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-  }
-  .about__content {
-      text-align: center;
-  }
-  .about__content p {
-      margin: 1.5rem 0;
-  }
-    
+@media screen and (max-width: 600px) {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about__content {
+        text-align: center;
+    }
+    .about__content p {
+        margin: 1.5rem 0;
+    }
 }

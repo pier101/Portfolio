@@ -29,7 +29,7 @@
     row-gap: 2rem;
 }
 
-.experience__details{
+.experience__details {
     display: flex;
     gap: 1rem;
 }
@@ -39,9 +39,8 @@
     color: var(--color-primary);
 }
 
-
 /* =============== MEDIA QUERIES ===================== */
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
     }
@@ -54,13 +53,13 @@
     .experience__content {
         padding: 1rem;
     }
- }
- @media screen and(max-width: 600px) {
+}
+@media screen and (max-width: 600px) {
     .experience__container {
         gap: 1rem;
     }
     .experience__container > div {
-        width:  100%;
+        width: 100%;
         padding: 2rem 1rem;
     }
- }
+}

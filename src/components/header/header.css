@@ -28,24 +28,21 @@ header {
 }
 
 .header__socials::after {
-    content: '';
-    width: 1px ;   
+    content: "";
+    width: 1px;
     height: 2rem;
     background: var(--color-primary);
 }
 
 .me {
-    
-    background:linear-gradient(var(--color-primary), transparent);
+    /* background: linear-gradient(var(--color-primary), transparent); */
     width: 22rem;
     height: 30rem;
     position: absolute;
-    left: calc(50% -11rem);
+    left: calc(50% - 11rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem;
-
 }
 
 /* =============== SCROLL DOWN ===================== */
@@ -60,17 +57,17 @@ header {
 }
 
 /* =============== MEDIA QUERIES ===================== */
-@media screen and(max-width: 1024px) {
-    header{
+@media screen and (max-width: 1024px) {
+    header {
         height: 68vh;
     }
 }
-@media screen and(max-width: 600px) {
-    header{
+@media screen and (max-width: 600px) {
+    header {
         height: 100vh;
     }
-    .header__socials,.scroll__down {
+    .header__socials,
+    .scroll__down {
         display: none;
     }
-    
 }
