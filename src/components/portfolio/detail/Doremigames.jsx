@@ -6,39 +6,38 @@ const Doremigames = () => {
         <ul>
             <li>
                 <BiCheck />
-                <span>docker-compose 이용해 ec2내에서 배포</span>
+                <span>NFT 등급별 민팅기능 (ERC-721)</span>
             </li>
             <li>
                 <BiCheck />
+                <span>유저당 Minting 횟수 제한 (NFT독점 방지)(ERC-721)</span>
+            </li>
+            <li>
+                <BiCheck />
+                <span>metadata IPFS에 저장 (pinata)</span>
+            </li>
+            <li>
+                <BiCheck />
+                <span>NFT 즉시 구매/판매, 경매, 선물 기능 (ERC-721)</span>
+            </li>
+
+            <li>
+                <BiCheck />
                 <span>
-                    오픈제플린 활용 claim, minting, auction, sale 컨트랙트 구현
+                    랭킹, 미션 달성에 따른 ERC-20토큰 보상 클레임 (ERC-20)
                 </span>
             </li>
             <li>
                 <BiCheck />
-                <span>
-                    react-observer-intersection 라이브러리 활용하여 feed게시물
-                    무한 스크롤 구현
-                </span>
+                <span> 컨트랙트-client 간 web3 상호작용</span>
             </li>
             <li>
                 <BiCheck />
-                <span>계정별(user , artist) 페이지 사용권한 차이</span>
+                <span> admin 권한 관련 db 요청 처리</span>
             </li>
             <li>
                 <BiCheck />
-                <span>rest api 준수하여 클라이언트 요청에 대한 응답 처리</span>
-            </li>
-            <li>
-                <BiCheck />
-                <span>
-                    mySql 관계설정 활용한 user의 아티스트 follow / 상품 찜하기
-                    기능 구현
-                </span>
-            </li>
-            <li>
-                <BiCheck />
-                <span>Link / Router 설정</span>
+                <span>docker-compose 이용해 aws ec2내에서 배포</span>
             </li>
         </ul>
     );

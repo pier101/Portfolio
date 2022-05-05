@@ -29,12 +29,12 @@
     row-gap: 2rem;
 }
 
-.experience__details {
+.experience__detail {
     display: flex;
     gap: 1rem;
 }
 
-.experience__details-icon {
+.experience__detail-icon {
     margin-top: 6px;
     color: var(--color-primary);
 }

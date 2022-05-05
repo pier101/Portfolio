@@ -1,6 +1,6 @@
 header {
-    height: 100vh;
-    padding-top: 7rem;
+    /* height: 100vh; */
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -17,25 +17,8 @@ header {
     justify-content: center;
 }
 
-.header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-}
-
-.header__socials::after {
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
-
 .me {
-    /* background: linear-gradient(var(--color-primary), transparent); */
+    background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -43,6 +26,7 @@ header {
     margin-top: 4rem;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem;
+    border-radius: 20rem 20rem 0 0;
 }
 
 /* =============== SCROLL DOWN ===================== */

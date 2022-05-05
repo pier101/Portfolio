@@ -1,11 +1,14 @@
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 200px;
+
+    width: 100%;
 }
 
 .about__me {
-    width: 100%;
+    width: 340px;
+    height: 500px;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
@@ -31,31 +34,33 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto auto;
+    gap: 10px;
 }
 
 .about__card {
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
+    width: 12rem;
+    height: 3rem;
+    line-height: 0.2rem;
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
 }
-.about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-.about__icon {
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
 
 .about__card h5 {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    color: var(--color-white);
+}
+.about__card.active {
+    background: #3b8bc4;
+}
+.about__card:hover {
+    background: var(--color-bg-variant);
+    cursor: pointer;
 }
 
 .about__card small {
@@ -63,9 +68,19 @@
     color: var(--color-light);
 }
 
+.about__icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.about__content {
+    width: 800px;
+}
 .about__content p {
-    margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    margin: 4rem 0 2.6rem;
+    color: var(--color-white);
+    font-size: 18px;
+    min-height: 280px;
 }
 
 /* =============== MEDIA QUERIES ===================== */
